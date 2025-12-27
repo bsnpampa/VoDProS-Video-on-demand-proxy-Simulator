@@ -1,18 +1,16 @@
 # VoDProS-Video-on-demand-proxy-Simulator
 
-VoDProS consegue simular o fluxo do funcionamento  de servidor proxy VoD e atraves do simulação conseguindo extrair informações como a taxa de acerto do proxy, para diferentes cerarios e argortimos.
+O VoDProS simula o fluxo do funcionamento de um servidor proxy VoD para extrair informações como a taxa de acertos do proxy, para diferentes cenários de carga e algorítmos de cacheamento.
 
-##Primeiros Execução
+###### Passos de instalação, configuração e execução:
 
-### Antes criar ambiente virtual, para depos proseguir para os proximos passos
-
-Criar Ambienste virtual
+Passo 1) Criar Ambienste virtual:
 `python3 -m  venv ./env`
 
-Ativa ambiente virtual
+Passo 2) Ativar ambiente virtual:
 `source ./env/bin/activate`
 
-### Instalar os seguintes pacotes:
+Passo 3) Instalar os seguintes pacotes:
 
 OS-sys
 `pip install os-sys `
@@ -26,34 +24,31 @@ Python-math
 Multiprocess
 `pip install multiprocess`
 
-### Para executar o código no pode executar:
-#### PYTHON 3
+###### Passos para executar o código:
+
+Passo 1: #### PYTHON 3
 
     cd ./src/
 
     python3 main.py
 
-##Depois da primeira vez Execução
-
-
-
-ou
+ou, alternativamente, especificando:
 
     cd ./src/
 
     python3 main.py 1 1 1
 
-1º argumento é numero do diretorio de leitura
-2º argumento é numero da varição dos parametros
-3º argumento é numero do algortimo que deseja executar
+1º argumento define o numero/nome do diretorio de leitura.
+2º argumento define a variação dos parametros.
+3º argumento define o número do algortimo que deseja utilizar na simulação.
 
 ### OBS
-  Altere a variale `numeorThreadMax` que é quantidade de thread que o simulador podera usar.
+  Altere a variável `numeroThreadMax` que define o grau de paralelismo (quantidade de threads) que o simulador usará na simulação.
 
-##### *OBS:* utilise o pypy3 como compilador por executar o codigo em menor tempo.
+##### *OBS:* utilize o pypy3 como compilador para gerar um código mais eficiente (que executa em menor tempo).
 
-## Videos
+## Video Tutorial
 
-VoDProS- primeira execução <https://youtu.be/QUK5pwUS6-o
+VoDProS- dicas para a primeira execução: https://youtu.be/QUK5pwUS6-o
 
 ###### Matheus Koch-
